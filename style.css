@@ -1,0 +1,551 @@
+:root {
+	/* サイトで使用するカラー */
+	--mainpink: #DC8C84;
+	--fontbrown: #350A00;
+	--subblue: #54A2AF;
+	--subyellow: #D0D0A4;
+	--suborange: #E3AE6C;
+    --basewhite:#ffffff;
+    --nextbule:#14647F;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style:none;
+	
+}
+/* フォントの設定 */
+
+@font-face {
+	font-family:"Japanese";
+	src: url(fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family:"Mallanna";
+	src: url(fonts/Mallanna/Mallanna-Regular.ttf);
+	font-weight: 400;
+}
+
+.looogo{
+    background-color: white;
+    width:100%;
+    height: 60px;
+}
+.logos{
+    width:300px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+}
+.kari-moji{
+    background-color: var(--basewhite);
+    text-align: center;
+    font-family:"Mallanna";
+    font-size: 40px;
+    color:var(--subblue);
+    padding:10px;
+}
+
+.kari-size{
+    width:300px;
+    height:180px;
+    margin-left: 155px;
+    margin-right:100px;
+}
+/*文字サイズ*/
+.header-moji{
+    font-family:"Mallanna";
+    color:white;
+    /* background-color: white; */
+    font-size: 25px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:5px;
+}
+
+.header-moji a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+
+.header-maru{
+    font-family: "Japanese";
+    font-size: 5px;
+    color:lightblue;
+}
+
+.caption-moji{
+    font-family:"Mallanna";
+    color:var(--subblue);
+    font-size: 40px;
+    text-align: center;
+    padding-top:60px;
+}
+
+.caption-maru{
+    font-family: "Japanese";
+    color: lightblue;
+    font-size: 10px;
+    padding:1px 10px 20px 10px;
+}
+
+.work-moji-nomal{
+    font-family:"Mallanna";
+	color:var(--nextbule);
+	font-size: 35px;
+	padding-top:10px;
+}
+
+.work-moji-nomal2{
+    font-family:"Japanese";
+	color:var(--nextbule);
+	font-size: 30px;
+	padding-top:20px;
+    padding-bottom: 10px;
+}
+
+.work-moji-small{
+    font-family:"Japanese";
+	color:var(--subblue);
+	font-size: 15px;
+	padding-top:5px;
+	padding-bottom: 15px;
+}
+.about-moji-nomal{
+    font-family:"Japanese";
+    font-size:35px;
+    color:var(--nextbule);
+    padding-left:20px;
+}
+
+.about-moji-small{
+    font-family:"Japanese";
+    font-size:15px;
+    color:var(--subblue);
+    padding-left:20px;
+}
+
+.footer-moji{
+    font-family: "Mallanna";
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.title-moji1{
+    font-family: "Mallanna";
+    color:var(--nextbule);
+    font-size: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.title-moji2{
+    font-family: "Japanese";
+    color:var(--nextbule);
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subtitle-moji{
+    font-family: "Japanese";
+    color:var(--subblue);
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.introduce-moji-nomal{
+    font-family: "Japanese";
+    color:var(--nextbule);
+    font-size: 30px;
+}
+
+.introduce-moji-small{
+    font-family: "Japanese";
+    color:var(--nextbule);
+    font-size: 15px;
+}
+
+.introduce-moji-sub{
+    font-family: "Japanese";
+    color:var(--nextbule);
+    font-size: 24px;
+}
+
+.number-moji{
+    font-family: "Japanese";
+    color:var(--nextbule);
+    font-size: 15px;
+}
+
+/*ヘッダー*/
+.header-bar{
+    /* position:fixed;*/
+    /* top:0px; */
+    position: relative;
+    background-color:rgba(48,162,175,0.7);
+    width:100%;
+    height:60px;
+    z-index: 10;
+}
+.header-icon-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-fixed{
+    position:fixed;
+    top:0;
+}
+
+
+/*MV*/
+
+.MV{
+    background-color: #ffffff;
+    width:100%;
+    height:800px;
+}
+
+.MV-size{
+    width:100%;
+    height:100%;
+    z-index: 5;
+}
+.MV-sizes{
+    width:1440px;
+    height:633px;
+    z-index: 5;
+}
+
+
+.MV-slider{
+    position:relative;
+}
+
+.MV-slider li{
+    position: absolute;
+    list-style: none;
+    visibility: hidden;
+    animation: anime_slider_fade 12s 0s infinite;
+}
+
+.MV-slider li:nth-of-type(2) {
+    animation-delay: 4s;
+}
+
+.MV-slider li:nth-of-type(3){
+    animation-delay: 8s;
+}
+
+@keyframes anime_slider_fade {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    48.3% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*WORKS*/
+
+.caption-maru-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.works{
+    background-color:white;
+    /* width:100%;
+    height:2400px; */
+}
+
+.work-list{
+	padding:30px 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.work-list li{ 
+	text-align: center;
+	padding-top:40px;
+	padding-bottom: 40px;
+}
+
+.viewmore{
+	font-family: "Mallanna";
+	color:var(--mainpink);
+	background-color: #ffffff;
+	font-size: 25px;
+	/* padding:5px 30px 8px 30px; */
+    padding-top:5px;
+    padding-bottom:8px;
+	border: solid 2px var(--subblue);
+	width: 50%;
+	margin: 0 25%;
+}
+
+.viewmore:hover{
+	background-color:var(--subblue);
+    border: solid 2px var(--subblue);
+}
+
+.viewmore:hover a{
+	color: #ffffff;
+}
+
+.viewmore a{
+	text-decoration: none;
+	color:var(--subblue);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.view-size{
+    width:405px;
+    height:239px;
+}
+
+/*about*/
+.about{
+    background-color:white;
+    /* width:100%;
+    height:1000px; */
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.aboutsize{
+	width:300px;
+	height:300px;
+	margin-right:100px;
+}
+
+.about-line{
+    background-color:var(--subblue); /* 線色 */
+    border-radius: 2px; /* 線幅の半分 */
+    content: "";
+    display: block;
+	height:4px;
+	width:550px;
+    margin-top: 10px;
+}
+.about-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.about-mee{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    padding-top:20px;
+    padding-left:30px;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--subblue);
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*内容*/
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	margin-top: 20px;
+}
+
+.title-line{
+	background-color:var(--subblue) ; /* 線色 */
+    border-radius: 2px; /* 線幅の半分 */
+    content: "";
+    display: block;
+	height:2px;
+	width:60%;
+	margin: 0 auto;
+}
+
+.title-line-maru{
+    font-family: "Japanese";
+    font-size: 10px;
+    color:var(--subblue);
+}
+
+.title-line-set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie{
+	display: flex;
+	justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.sikaku{
+	background-color:var(--subblue);
+	width:20px;
+	height:40px;
+	margin-right: 5px;
+}
+
+.sikaku-set{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.introduce-set{
+	padding-top:20px;
+	padding-left:25px;
+}
+
+.center-line{
+    display: flex;
+    align-items: center;
+}
+
+.section-tate{
+	display: flex;
+	flex-direction:column;
+}
+
+.section-tatetate{
+    display: flex;
+	flex-direction:column;
+    margin-top: 100px;
+}
+
+.section-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 80px;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    margin-left:270px;
+}
+
+.number-size{
+    width:40px;
+    height:40px;
+    margin-right: 10px;
+}
+
+.number-tate{
+    display: flex;
+	flex-direction:column;
+}
+
+.number-set{
+    padding-top:5px;
+    padding-left:40px;
+}
+
+.number-margin{
+    margin-top:60px;
+}
+
+.number-layout{
+    display: flex;
+    flex-direction: column;
+    margin-left:370px;
+}
+
+.photo-size{
+    width:250px;
+    height:250px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.MARK-photos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MARK-photos-size{
+    width: 150px;
+    height:150px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top:20px;
+}
+
+.softwere-layout{
+    display: flex;
+    justify-content: center;
+
+}
+
+.softwere-size{
+    width: 120px;
+    height:120px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.softwere-margin{
+    margin-bottom: 120px;
+}
+
+
+
+.img_wrap{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img_wrap img{
+    width: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.img_wrap:hover img{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    opacity: 0.6;
+}
+  

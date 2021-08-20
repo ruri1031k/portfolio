@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+		<meta charset="utf-8" />
+        <!-- ページタイトル(タブに表示される名前) -->
+		<title>川原瑠梨ポートフォリオサイト</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <p class="kari-moji">Ruri Kawahara</p>
+        </section>
+
+        <!--ヘッダー-->
+        <section>
+            <div>
+                <ul class="header-icon-style header-bar">
+                    <li>
+                        <p class="header-moji"><a href="index.html">TOP</a></p>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#works">WORKS</a></p>
+                        </li>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#about">ABOUT</a></p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--JAVA-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function($) {
+            const $bar = $('.header-bar');
+            const barHeight = $bar.outerHeight();
+            const offset = $bar.offset();
+
+            $(window).scroll(function () {
+            if($(window).scrollTop() > offset.top) {
+                $bar.addClass('js-fixed');
+                $('.title').css('padding-top', barHeight);
+            } else {
+                $bar.removeClass('js-fixed');
+                $('.title').css('padding-top', 0);
+            }
+            });
+        });
+        </script>
+
+        <!--1番上-->
+        <!--タイトル-->
+        <section>
+            <div class="title">
+                <p class="title-moji2">前後を「混ぜる」</p>
+                <p class="subtitle-moji">2021 映像制作</p>
+            </div>
+                <p class="title-line"></p>
+            <div class="movie">
+                <iframe width="672" height="378" src="https://www.youtube.com/embed/VjyHDsq3R1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sections">
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">作品紹介</p>
+                        </li>
+                    </ul>
+                    <div class="introduce-set">
+                        <p class="introduce-moji-small">実習課題で制作した映像作品です。</p>
+                        <p class="introduce-moji-small">「混ぜる/混ざる」をテーマに、人間にとって前と後ろとは何か、時間が経過することや人間の動きの不可逆性を問う作品です。</p>
+                        <p class="introduce-moji-small">私たちが日々生きている世界は、もしかしたら数えきれないほど存在する「現実」の中の一部にすぎないのかもしれません。</p> 
+                    </div>
+                </div>
+
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">コンセプト</p>
+                        </li>
+                    </ul>
+                    <div class="introduce-set">
+                        <p class="introduce-moji-small">現代では、スマートフォンなどの液晶技術が発展し、動画や映像を見ることがより身近なことになっています。</p>
+                        <p class="introduce-moji-small">テレビや動画を見ていて、みなさんも「逆再生」をしたことがあるのではないでしょうか。逆再生とは、本来現実にはありえない</p>
+                        <p class="introduce-moji-small">「異常」なことでありますが、映像はその「異常」を人間にまるで「異常でないこと」のように認識させているのではないかと私は</p> 
+                        <p class="introduce-moji-small">考え、この逆再生することの時間的な異常さや人間の物理的動作の異常さを伝えることをコンセプトにしました。</p>
+                        <p class="introduce-moji-small">もしかしたら、本当に異常なのは私たちが生きている世界なのかもしれないという「第2の現実の可能性」を捉えます。</p>
+                    </div>
+                </div>
+                
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">制作過程</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

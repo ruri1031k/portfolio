@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+		<meta charset="utf-8" />
+        <!-- ページタイトル(タブに表示される名前) -->
+		<title>川原瑠梨ポートフォリオサイト</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <section>
+            <p class="kari-moji" id="top">Ruri Kawahara</p>
+        </section>
+        <!-- <section class="looogo">
+            <img class="logos"src="images/logos.png"/>
+        </section> -->
+        
+        <!--ヘッダー-->
+        <section>
+            <div>
+                <ul class="header-icon-style header-bar">
+                    <li>
+                        <p class="header-moji"><a href="#top">TOP</a></p>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#works">WORKS</a></p>
+                        </li>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#about">ABOUT</a></p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--JAVA-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function($) {
+            const $bar = $('.header-bar');
+            const barHeight = $bar.outerHeight();
+            const offset = $bar.offset();
+
+            $(window).scroll(function () {
+            if($(window).scrollTop() > offset.top) {
+                $bar.addClass('js-fixed');
+                $('.MV').css('padding-top', barHeight);
+            } else {
+                $bar.removeClass('js-fixed');
+                $('.MV').css('padding-top', 0);
+            }
+            });
+        });
+        </script>
+
+        
+
+        <!--MV-->
+        <!-- <section>
+            <div class="MV">
+                <img class="MV-size"src="images/minase.PNG"/>
+            </div>
+        </section> -->
+       
+        <section>
+            <div class="MV">
+                <div class="MV-slider">
+                    <ul>
+                        <li>
+                            <img class="MV-size"src="images/mv03.png"/>
+                        </li>
+                        <li>
+                            <img class="MV-size"src="images/mv01.png"/>
+                        </li>
+                        <li>
+                            <img class="MV-size"src="images/mv02.png"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--works-->
+        <section>
+            <div class="works">
+                <div>
+                    <p class="caption-moji" id="works">WORKS</p>
+                    <ul class="caption-maru-layout">
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                        <li>
+                            <p class="caption-maru">●</p>
+                        </li>
+                    </ul>
+                    <ul class="work-list">
+                        <li>
+                            <img class="view-size"src="images/portfolio.png"/>
+                            <p class="work-moji-nomal">Portfolio Site</p>
+                            <p class="work-moji-small">2021 Webデザイン/コーディング</p>
+                            <p class="viewmore"><a href="">view more!</a></p>
+                        </li>
+                        <li>
+                            <img class="view-size"src="images/MARK.png"/>
+                            <p class="work-moji-nomal">MARK</p>
+                            <p class="work-moji-small">2021 モーションキャプチャー映像</p>                                
+                            <p class="viewmore"><a href="MARK.html">view more!</a></p>
+                        </li>
+                        <li>
+                            <img class="view-size"src="images/D4.png"/>
+                            <p class="work-moji-nomal2">前後を「混ぜる」</p>
+                            <p class="work-moji-small">2021 映像制作</p>
+                            <p class="viewmore"><a href="MAZE.html">view more!</a></p>
+                        </li>                            
+                        <li>
+                            <img class="view-size"src="images/flag.png"/>
+                            <p class="work-moji-nomal">FLAG</p>
+                            <p class="work-moji-small">2021 アプリケーション企画</p>
+                            <p class="viewmore"><a href="">view more!</a></p>
+                        </li>
+                        <li>
+                            <img class="view-size"src="images/dreaming.png"/>
+                            <p class="work-moji-nomal">Dreaming</p>                                
+                            <p class="work-moji-small">2020 映像制作</p>
+                            <p class="viewmore"><a href="">view more!</a></p>
+                        </li>
+                        <li>
+                            <img class="view-size"src="images/tcle.png"/>
+                            <p class="work-moji-nomal">Tcle</p>
+                            <p class="work-moji-small">2020 Webサイト企画</p>
+                            <p class="viewmore"><a href="">view more!</a></p>
+                        </li>
+                        <li>
+                            <img src="images/view.jpg"/>
+                            <p class="work-moji-nomal2">れしーぼ</p>                                
+                            <p class="work-moji-small">2020 アプリケーション企画</p>
+                            <p class="viewmore"><a href="">view more!</a></p>
+                        </li>
+                        <li>
+                            <img src="images/view.jpg"/>
+                            <p class="work-moji-nomal2">違和感</p>
+                            <p class="work-moji-small">2020 映像制作</p>
+                            <div class="viewmore">
+                                <a href="">view more!</a>  
+                            </div>
+                                                     
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!--about-->
+        <section>
+            <div class="about">
+                <p class="caption-moji" id="about">ABOUT</p>
+                <ul class="caption-maru-layout">
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                    <li>
+                        <p class="caption-maru">●</p>
+                    </li>
+                </ul>
+                <div class="about-layout">
+                    <img class="aboutsize" src="images/me.png"/>
+                    <ul>
+                        <li>
+                            <ul class="about-mee">
+                                <li>
+                                    <p class="about-moji-nomal">川原瑠梨</p>
+                                </li>
+                                <li>
+                                    <p class="about-moji-small">KawaharaRuri</p>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <p class="about-line"></p>
+                        </li>
+                        <ul class="about-me">
+                            <li>
+                                <p class="about-moji-small">2000年10月31日生まれ</p>
+                            </li>
+                            <li>
+                                <p class="about-moji-small">名古屋市立大学 芸術工学部 情報環境デザイン学科 3年</p>
+                            </li>
+                            <li>
+                                <p class="about-moji-small">高校時代「小林美術研究所」でデッサン・色彩の基礎を学びました</p>
+                            </li>
+                            <li>
+                                <p class="about-moji-small">アニメーション・子供向けTVアニメが好きです</p>
+                            </li>
+                        </ul>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--フッター-->
+        <section>
+            <div class="footer">
+                <p class="footer-moji">©︎2021 RuriKawahara PortfolioSite</p>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+            var set = 200;//ウインドウ上部からどれぐらいの位置で変化させるか
+            var boxTop = new Array;
+            var current = -1;
+            //各要素の位置
+            //position-nowは場所を取得したい対象の要素に付ける
+            $('.position-now').each(function (i) {
+                boxTop[i] = $(this).offset().top;
+            });
+            //最初の要素にclass="positiion-now"をつける
+            changeBox(0);
+            //スクロールした時の処理
+            $(window).scroll(function () {
+                scrollPosition = $(window).scrollTop();
+                for (var i = boxTop.length - 1; i >= 0; i--) {
+                if ($(window).scrollTop() > boxTop[i] - set) {
+                    changeBox(i);
+                    break;
+                }
+                };
+            });
+            //ナビの処理
+            function changeBox(secNum) {
+                if (secNum != current) {
+                current = secNum;
+                secNum2 = secNum + 1;//以下にクラス付与したい要素名と付与したいクラス名
+                $('nav li a').removeClass('link-current');
+
+                //位置によって個別に処理をしたい場合　
+                if (current == 0) {
+                    $('#top_link_js').addClass('link-current');
+                    // 現在地がsection1の場合の処理
+                } else if (current == 1) {
+                    $('#works_link_js').addClass('link-current');
+                    // 現在地がsection2の場合の処理
+                } else if (current == 2) {
+                    // 現在地がsection3の場合の処理
+                    $('#about_link_js').addClass('link-current');
+                }
+
+                }
+            };
+            });
+            $(function () {
+                $('a[href^="#"]').click(function () {
+                    var adjust = -100;
+                    var speed = 500;
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top + adjust;
+                    $("html, body").animate({ scrollTop: position }, speed, "swing");
+                    return false;
+                });
+            });
+
+
+            $(window).on('load', function(){
+                $('.loader-slide').addClass('open');
+            });
+
+
+            //変数定義
+            var navigationOpenFlag = false;
+            var navButtonFlag = true;
+            var focusFlag = false;
+            
+            //ハンバーガーメニュー
+                $(function(){
+            
+                $(document).on('click','.el_humburger',function(){
+                    if(navButtonFlag){
+                    spNavInOut.switch();
+                    //一時的にボタンを押せなくする
+                    setTimeout(function(){
+                        navButtonFlag = true;
+                    },200);
+                    navButtonFlag = false;
+                    }
+                });
+                $(document).on('click touchend', function(event) {
+                    if (!$(event.target).closest('.bl_header,.el_humburger').length && $('body').hasClass('js_humburgerOpen') && focusFlag) {
+                    focusFlag = false;
+                    //scrollBlocker(false);
+                    spNavInOut.switch();
+                    }
+                });
+                });
+            
+            //ナビ開く処理
+            function spNavIn(){
+                $('body').removeClass('js_humburgerClose');
+                $('body').addClass('js_humburgerOpen');
+                setTimeout(function(){
+                    focusFlag = true;
+                },200);
+                setTimeout(function(){
+                    navigationOpenFlag = true;
+                },200);
+
+                $('#overlay').fadeIn(200);
+            }
+            //ナビ閉じる処理
+            function spNavOut(){
+                $('body').removeClass('js_humburgerOpen');
+                $('body').addClass('js_humburgerClose');
+                setTimeout(function(){
+                    $(".uq_spNavi").removeClass("js_appear");
+                    focusFlag = false;
+                },200);
+                navigationOpenFlag = false;
+                $('#overlay').fadeOut(200);
+            }
+            
+            //ナビ開閉コントロール
+            var spNavInOut = {
+            switch:function(){
+                if($('body.spNavFreez').length){
+                return false;
+                }
+                if($('body').hasClass('js_humburgerOpen')){
+                spNavOut();
+                } else {
+                spNavIn();
+                }
+            }
+            };
+        </script>
+        
+    
+
+        
+
+
+        
+    </body>
+</html>

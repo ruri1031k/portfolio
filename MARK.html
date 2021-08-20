@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+		<meta charset="utf-8" />
+        <!-- ページタイトル(タブに表示される名前) -->
+		<title>川原瑠梨ポートフォリオサイト</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <p class="kari-moji">Ruri Kawahara</p>
+        </section>
+
+        <!--ヘッダー-->
+        <section>
+            <div>
+                <ul class="header-icon-style header-bar">
+                    <li>
+                        <p class="header-moji"><a href="index.html">TOP</a></p>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#works">WORKS</a></p>
+                        </li>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="#about">ABOUT</a></p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--JAVA-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function($) {
+            const $bar = $('.header-bar');
+            const barHeight = $bar.outerHeight();
+            const offset = $bar.offset();
+
+            $(window).scroll(function () {
+            if($(window).scrollTop() > offset.top) {
+                $bar.addClass('js-fixed');
+                $('.title').css('padding-top', barHeight);
+            } else {
+                $bar.removeClass('js-fixed');
+                $('.title').css('padding-top', 0);
+            }
+            });
+        });
+        </script>
+
+        <!--1番上-->
+        <!--タイトル-->
+        <section>
+            <div class="title">
+                <p class="title-moji1">MARK</p>
+                <p class="subtitle-moji">2021 モーションキャプチャー映像</p>
+            </div>
+                <p class="title-line"></p>
+            <div class="movie">
+                <iframe width="672" height="378" src="https://www.youtube.com/embed/iNDAv0sdfTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="sections">
+                <div class="section-tatetate">
+                    <div class="center-line">
+                        <div class="section-tate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <p class="sikaku"></p>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-nomal">作品紹介</p>
+                                </li>
+                            </ul>
+                                <div class="introduce-set">
+                                    <p class="introduce-moji-small">実習課題で制作したモーションキャプチャーによる映像作品です</p>
+                                    <p class="introduce-moji-small">"マークさん"が身の回りのさまざまなマークのポーズをして</p>
+                                    <p class="introduce-moji-small">何のポーズをしているのか考える映像作品となっています</p>  
+                                </div>
+                        </div>
+                        <img class="kari-size"src="images/MARK.png"/>
+                    </div>
+                </div>
+                
+                
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">コンセプト</p>
+                        </li>
+                    </ul>
+                    <div class="introduce-set">
+                        <p class="introduce-moji-small">目指したのは「子供向けTV番組」。日頃私たちはたくさんの人の形をした記号や標識、マークに導かれて生活しています。</p>
+                        <p class="introduce-moji-small">当たり前のようにマークの意味を理解していますが、それはグラフィックデザイナーが簡潔で誰でも意味を理解できるように</p>
+                        <p class="introduce-moji-small">デザインしているからです</p> 
+                        <p class="introduce-moji-small">平面で構成された人型マークを、モーションキャプチャーにより３次元におこすことで、平面デザインと現実の可逆性・不可逆性や</p>
+                        <p class="introduce-moji-small">マークの記号性を「なるほど！」と感じてもらうこと目標に制作しました。</p>
+                    </div>
+                </div>
+
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">制作過程</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="number-layout">
+                <!--01-->
+                <div class="number-margin">
+                    <div class="number-tate">
+                        <ul class="sikaku-set">
+                            <li>
+                                <img class="number-size"src="images/01.png"/>
+                            </li>
+                            <li>
+                                <p class="introduce-moji-sub">映像の内容を決定</p>
+                            </li>
+                        </ul>
+
+                        <div class="number-set">
+                            <p class="introduce-moji-small">作成する映像のストーリーとカメラワークを決めます。また、撮影するマークのポーズを決めます。</p>
+                            <p class="introduce-moji-small">今回はよりポーズと色がわかりやすいように青信号、道路工事中、トイレ、非常口のマークにしました。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--02-->
+                <div class="number-margin">
+                    <div class="center-line">
+                        <img class="photo-size"src="images/mocap.png"/>
+                        <div class="number-tate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <img class="number-size"src="images/02.png"/>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-sub">モーションの撮影</p>
+                                </li>
+                            </ul>
+
+                            <div class="number-set">
+                                <p class="introduce-moji-small">Cortexを使用してモーションの撮影・編集を行います。</p>
+                                <p class="introduce-moji-small">実際に自分自身で専用のスーツを来て撮影しました。</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!--03-->
+                <div class="number-margin">
+                    <div class="center-line">
+                        <div class="number-tate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <img class="number-size"src="images/03.png"/>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-sub">3Dモデルに骨つけ</p>
+                                </li>
+                            </ul>
+
+                            <div class="number-set">
+                                <p class="introduce-moji-small">Mayaで使用したい3Dモデルに骨をつけます</p>
+                                <p class="introduce-moji-small">HumanIKを設定して3Dモデルが滑らかに動くか</p>
+                                <p class="introduce-moji-small">確認作業も行います</p>
+                                <p class="introduce-moji-small">画像1番右のモデルを使用しました</p>
+                            </div>
+                        </div> 
+                        <img class="photo-size"src="images/picto.png"/> 
+                    </div>
+                </div>
+                <!--04-->
+                <div class="number-margin">
+                    <div class="center-line">
+                        <img class="photo-size"src="images/motion.png"/>
+                        <div class="number-tate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <img class="number-size"src="images/04.png"/>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-sub">モデルを当てる/修正</p>
+                                </li>
+                            </ul>
+
+                            <div class="number-set">
+                                <p class="introduce-moji-small">Motion Builderで骨をつけた3Dモデルに</p>
+                                <p class="introduce-moji-small">撮影したモーションを適用させます</p>
+                                <p class="introduce-moji-small">さらに適用後、不自然な箇所がないように</p>
+                                <p class="introduce-moji-small">マーカーごとに修正を行います</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!--05-->
+                <div class="number-margin">
+                    <div class="number-tate">
+                        <ul class="sikaku-set">
+                            <li>
+                                <img class="number-size"src="images/05.png"/>
+                            </li>
+                            <li>
+                                <p class="introduce-moji-sub">実写映像の撮影</p>
+                            </li>
+                        </ul>
+
+                        <div class="number-set">
+                            <p class="introduce-moji-small">日常的に見るマークをテーマにしているため、街中にあるマークを探して撮影しました</p>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="MARK-photos">
+                            <li>
+                                <img class="MARK-photos-size"src="images/aoshingou.png"/>
+                            </li>
+                            <li>
+                                <img class="MARK-photos-size"src="images/kouji.png"/>
+                            </li>
+                            <li>
+                                <img class="MARK-photos-size"src="images/toilet.png"/>
+                            </li>
+                            <li>
+                                <img class="MARK-photos-size"src="images/hijouguchi.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--06-->
+                <div class="number-margin">
+                    <div class="center-line">
+                        <img class="photo-size"src="images/motion.png"/>
+                        <div class="number-tate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <img class="number-size"src="images/06.png"/>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-sub">映像編集</p>
+                                </li>
+                            </ul>
+
+                            <div class="number-set">
+                                <p class="introduce-moji-small">Adobe After Effectを使用して編集作業をします</p>
+                                <p class="introduce-moji-small">モーション以外の背景やBGMをつけます</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="sections">
+                <div class="section-tatetate">
+                    <ul class="sikaku-set">
+                        <li>
+                            <p class="sikaku"></p>
+                        </li>
+                        <li>
+                            <p class="introduce-moji-nomal">使用ソフトウェア</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="softwere-margin">
+                <ul class="softwere-layout">
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/cortex.png"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/autodeskmaya.png"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/motionbuilder.png"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/aftereffects.png"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!--フッター-->
+        <section>
+            <div class="footer">
+                <p class="footer-moji">©︎2021 RuriKawahara PortfolioSite</p>
+            </div>
+        </section>
+    </body>
+</html>
