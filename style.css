@@ -470,6 +470,13 @@ li{
     margin-top: 80px;
 }
 
+.section-layout2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 50px;
+}
+
 .sections{
     display: flex;
     flex-direction: column;
@@ -526,6 +533,39 @@ li{
     margin-left:10px;
     margin-right: 10px;
     margin-top:40px;
+}
+
+.flag-pic-size-left{
+    width: 250px;
+    height:480px;
+    margin-right:100px;
+    margin-left: 60px;
+
+}
+
+.flag-pic-size-right{
+    width: 250px;
+    height:480px;
+    margin-left:100px;
+}
+
+.flag-mitsui-size{
+    width: 250px;
+    height:250px;
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.flag-mitsui-bunseki{
+    width:800px;
+    height:880px;
+    display: flex;
+    text-align: center;
+    margin-top:50px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:30px;
 }
 
 .softwere-layout{
