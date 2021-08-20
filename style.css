@@ -462,7 +462,10 @@ li{
 .sections{
     display: flex;
     flex-direction: column;
-    margin-left:270px;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-left:100px;
+    margin-right: 100px; */
 }
 
 .number-size{
@@ -488,7 +491,8 @@ li{
 .number-layout{
     display: flex;
     flex-direction: column;
-    margin-left:370px;
+    /* margin-left:370px; */
+    align-items: center;
 }
 
 .photo-size{
