@@ -184,6 +184,11 @@ li{
     color:var(--nextbule);
     font-size: 24px;
 }
+.introduce-moji-sub2{
+    font-family: "Mallanna";
+    color:var(--nextbule);
+    font-size: 30px;
+}
 
 .number-moji{
     font-family: "Japanese";
@@ -506,6 +511,10 @@ li{
     margin-top:60px;
 }
 
+.number-margin2{
+    margin-top:100px;
+}
+
 .number-layout{
     display: flex;
     flex-direction: column;
@@ -538,8 +547,8 @@ li{
 .flag-pic-size-left{
     width: 250px;
     height:480px;
-    margin-right:100px;
-    margin-left: 60px;
+    margin-right:80px;
+    margin-left: 100px;
 
 }
 
@@ -547,6 +556,18 @@ li{
     width: 250px;
     height:480px;
     margin-left:100px;
+}
+
+.flag-pic-size-right2{
+    width: 220px;
+    height:422.4px;
+    margin-left:80px;
+}
+
+.flag-pic-size-left2{
+    width: 220px;
+    height:422.4px;
+    margin-right:80px;
 }
 
 .flag-mitsui-size{
@@ -558,14 +579,20 @@ li{
 }
 
 .flag-mitsui-bunseki{
-    width:800px;
-    height:880px;
+    width:880px;
+    height:855px;
     display: flex;
     text-align: center;
     margin-top:50px;
     margin-left:10px;
     margin-right:10px;
     margin-bottom:30px;
+}
+
+.flag-icon{
+    width:180px;
+    height:180px;
+    margin-right: 30px;
 }
 
 .softwere-layout{
