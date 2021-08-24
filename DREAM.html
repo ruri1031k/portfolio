@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+		<meta charset="utf-8" />
+        <!-- ページタイトル(タブに表示される名前) -->
+		<title>川原瑠梨ポートフォリオサイト</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="kari">
+                <p class="kari-moji" id="top"><a href="index.html">Ruri Kawahara</a></p>
+            </div>
+        </section>
+
+        <!--ヘッダー-->
+        <section>
+            <div>
+                <ul class="header-icon-style header-bar">
+                    <li>
+                        <p class="header-moji"><a href="index.html">TOP</a></p>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="index.html#works">WORKS</a></p>
+                        </li>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="index.html#about">ABOUT</a></p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--JAVA-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function($) {
+            const $bar = $('.header-bar');
+            const barHeight = $bar.outerHeight();
+            const offset = $bar.offset();
+
+            $(window).scroll(function () {
+            if($(window).scrollTop() > offset.top) {
+                $bar.addClass('js-fixed');
+                $('.title').css('padding-top', barHeight);
+            } else {
+                $bar.removeClass('js-fixed');
+                $('.title').css('padding-top', 0);
+            }
+            });
+        });
+        </script>
+
+        <!--1番上-->
+        <!--タイトル-->
+        <section>
+            <div class="title">
+                <p class="title-moji1">Dreaming</p>
+                <p class="subtitle-moji">2021 映像制作</p>
+            </div>
+            <p class="title-line"></p>
+            <div class="movie">
+                <iframe width="672" height="378" src="https://www.youtube.com/embed/fqOZ9IYaHN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sections">
+                <ul>
+                    <li>
+                        <div class="section-tatetate">
+                            <div class="section-tate">
+                                <ul class="sikaku-set">
+                                    <li>
+                                        <p class="sikaku"></p>
+                                    </li>
+                                    <li>
+                                        <p class="introduce-moji-nomal">作品紹介</p>
+                                    </li>
+                                </ul>
+                                    <div class="introduce-set">
+                                        <p class="introduce-moji-small">実習課題で制作した映像作品です。</p>
+                                        <p class="introduce-moji-small">グリーンバックを使い、空をモチーフにした合成映像を使うことを課題として、ショートムービーを作成しました。</p>
+                                        <p class="introduce-moji-small">初めて実際にスタジオでグリーンバックのセットを使用して、編集作業まで行いました。</p>  
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section-tatetate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <p class="sikaku"></p>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-nomal">コンセプト</p>
+                                </li>
+                            </ul>
+                            <div class="introduce-set">
+                                <p class="introduce-moji-small">初めての合成映像作品だったため、何よりも楽しんで作ることを目標に作成しました。</p>
+                                <p class="introduce-moji-small">コンセプトとして、少しメルヘンでかわいらしく、子供の頃に戻ったような気持ちになれるような作品を目指しました。</p>
+                                <p class="introduce-moji-small">合成映像だからこそできる表現だけでなく、それを引き立てるための実写映像の表現にも力を入れ、</p> 
+                                <p class="introduce-moji-small">映像自体が単調にならない、視聴者を飽きさせないことを常に念頭において制作に励みました。</p>
+                                <p class="introduce-moji-small">タイトルの「Dreaming」は、動画の内容である「夢の中」の意味と、子供が描く純粋な「夢」の意味も込めています。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section-tatetate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <p class="sikaku"></p>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-nomal">制作過程</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="number-layout">
+                            <!--01-->
+                            <div class="number-margin">
+                                <div class="center-line">
+                                    <img class="photo-size"src="images/maze01.png"/>
+                                    <div class="number-tate">
+                                        <ul class="sikaku-set">
+                                            <li>
+                                                <img class="number-size"src="images/01.png"/>
+                                            </li>
+                                            <li>
+                                                <p class="introduce-moji-sub">映像の構成を考える</p>
+                                            </li>
+                                        </ul>
+            
+                                        <div class="number-set">
+                                            <p class="introduce-moji-small">合成映像とそうでない映像を2種類使用したかったため</p>
+                                            <p class="introduce-moji-small">映像全体のストーリーと、細部の演出を絵コンテにします。</p>
+                                            <p class="introduce-moji-small">必要な小道具や扇風機の位置なども記載します。</p>
+                                            <p class="introduce-moji-small">後に撮影して変更したところもあります。</p>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <!--02-->
+                            <div class="number-margin">
+                                <div class="center-line">
+                                    <div class="number-tate">
+                                        <ul class="sikaku-set">
+                                            <li>
+                                                <img class="number-size"src="images/02.png"/>
+                                            </li>
+                                            <li>
+                                                <p class="introduce-moji-sub">グリーンバックで撮影する</p>
+                                            </li>
+                                        </ul>
+            
+                                        <div class="number-set">
+                                            <p class="introduce-moji-small">①で作成した絵コンテを元に、グリーンバックの撮影をします。</p>
+                                            <p class="introduce-moji-small">私自身が出演する必要があったため、カメラマン・照明など</p>
+                                            <p class="introduce-moji-small">撮影に協力してくれた同級生に詳しく作品内容を伝えます。</p>
+                                            <p class="introduce-moji-small">影が入ると編集で消す作業の分手間がかかってしまうため</p>
+                                            <p class="introduce-moji-small">なるべく照明で私の影が映らないように光を飛ばします。</p>
+                                            <p class="introduce-moji-small">扇風機は最大風力にして空を飛んでいる様子をより表現しました。</p>
+                                            <p class="introduce-moji-small">今回の映像では全4カット分撮影しました。</p>
+                                        </div>
+                                    </div> 
+                                    <img class="photo-size"src="images/dreamfan.png"/> 
+                                </div>
+                            </div>
+
+                            <!--03-->
+                            <div class="number-margin">
+                                <div class="center-line">
+                                    <img class="photo-size"src="images/dreamoha.png"/>
+                                    <div class="number-tate">
+                                        <ul class="sikaku-set">
+                                            <li>
+                                                <img class="number-size"src="images/03.png"/>
+                                            </li>
+                                            <li>
+                                                <p class="introduce-moji-sub">合成以外の映像を撮影する</p>
+                                            </li>
+                                        </ul>
+            
+                                        <div class="number-set">
+                                            <p class="introduce-moji-small">こちらも①の絵コンテを元に、撮影をします。</p>
+                                            <p class="introduce-moji-small">寝起きのシーンでは、自宅の自分の部屋で1人で撮影を行いました。</p>
+                                            <p class="introduce-moji-small">目覚ましアラームを鳴らす演出を考えていたため、</p>
+                                            <p class="introduce-moji-small">撮影用と小道具用として使用するスマートフォンの2台使用しました。</p>
+                                            <p class="introduce-moji-small">また、構図が同じようなカットにならないようにするために、</p>
+                                            <p class="introduce-moji-small">似たような構図でも少し視点を変えたり、物撮り挟んだりして、</p>
+                                            <p class="introduce-moji-small">単調で安っぽい演出にならないように気をつけました。</p>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <!--05-->
+                            <div class="number-margin">
+                                <div class="number-tate">
+                                    <ul class="sikaku-set">
+                                        <li>
+                                            <img class="number-size"src="images/04.png"/>
+                                        </li>
+                                        <li>
+                                            <p class="introduce-moji-sub">映像の編集</p>
+                                        </li>
+                                    </ul>
+            
+                                    <div class="number-set">
+                                        <p class="introduce-moji-small">合成映像はAfterEffectsでグリーンバックを透過し、それ以外の映像・音声はPremiereProで編集をしました。</p>
+                                        <p class="introduce-moji-small">グリーンバックで撮影したジンベイザメは尻尾の揺れを手作業で動かしていたため、どうしても影が映り込んでしまい、</p>
+                                        <p class="introduce-moji-small">1フレームずつ影を消す作業にかなり時間を取られてしまいました。</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="MARK-photos">
+                                        <li>
+                                            <img class="dream-size"src="images/dreamhikaku02.png"/>
+                                        </li>
+                                        <li>
+                                            <img class="dream-size"src="images/dreamhikaku01.png"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="MARK-photos">
+                                        <li>
+                                            <img class="dream-size"src="images/dreamhikaku03.png"/>
+                                        </li>
+                                        <li>
+                                            <img class="dream-size"src="images/dreamhikaku04.png"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>           
+                    <li>
+                        <div class="section-tatetate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <p class="sikaku"></p>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-nomal">使用ソフトウェア</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="softwere-margin">
+                <ul class="softwere-layout">
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/aftereffects.png"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_wrap softwere-size">
+                            <img src="images/premiere.png"/>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!--フッター-->
+        <section>
+            <div class="footer">
+                <p class="footer-moji">©︎2021 RuriKawahara PortfolioSite</p>
+            </div>
+        </section>
+
+    </body>
+</html>
