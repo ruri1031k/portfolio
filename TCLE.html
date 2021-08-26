@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+		<meta charset="utf-8" />
+        <!-- ページタイトル(タブに表示される名前) -->
+		<title>川原瑠梨ポートフォリオサイト</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="kari">
+                <p class="kari-moji" id="top"><a href="index.html">Ruri Kawahara</a></p>
+            </div>
+        </section>
+
+        <!--ヘッダー-->
+        <section>
+            <div>
+                <ul class="header-icon-style header-bar">
+                    <li>
+                        <p class="header-moji"><a href="index.html">TOP</a></p>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="index.html#works">WORKS</a></p>
+                        </li>
+                    </li>
+                    <li class="header-maru">●</li>
+                    <li>
+                        <li>
+                            <p class="header-moji"><a href="index.html#about">ABOUT</a></p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--JAVA-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function($) {
+            const $bar = $('.header-bar');
+            const barHeight = $bar.outerHeight();
+            const offset = $bar.offset();
+
+            $(window).scroll(function () {
+            if($(window).scrollTop() > offset.top) {
+                $bar.addClass('js-fixed');
+                $('.title').css('padding-top', barHeight);
+            } else {
+                $bar.removeClass('js-fixed');
+                $('.title').css('padding-top', 0);
+            }
+            });
+        });
+        </script>
+
+        <!--1番上-->
+        <!--タイトル-->
+
+        <section>
+            <div class="title">
+                <p class="title-moji1">Tcle</p>
+                <p class="subtitle-moji">2020 ポータルサイト企画</p>
+            </div>
+            <p class="title-line"></p>
+            <div class="tcle01-layout">
+                <img class="tcle-size" src="images/tcle01.png"/>
+            </div>
+            
+            <div class="sections">
+                <ul class="section-layout2">
+                    <!--作品紹介-->
+                    <li>
+                        <div class="section-tatetate">
+                            <div class="section-tate">
+                                <ul class="sikaku-set">
+                                    <li>
+                                        <p class="sikaku"></p>
+                                    </li>
+                                    <li>
+                                        <p class="introduce-moji-nomal">作品紹介</p>
+                                    </li>
+                                </ul>
+                                    <div class="introduce-set">
+                                        <p class="introduce-moji-small">学校教諭専用の部活動管理ポータルサイト「Tcle（ティークル）」です。</p>
+                                        <p class="introduce-moji-small">学校教諭の過剰な残業時間は現代の深刻な社会問題の1つでもあります。教員の負担を減らすため、残業時間の原因の1つである</p>
+                                        <p class="introduce-moji-small">部活動のスケジュール管理や生徒への連絡などスムーズに行います。</p> 
+                                        <p class="introduce-moji-small">この作品を通して、いかに学校教員が過酷な労働を強いられているかを知ってもらえるきっかけにしたいです。</p> 
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!--ペルソナ-->
+                    <li>
+                        <div class="number-margin">
+                            <div class="center-line">
+                                <div class="number-tate">
+                                    <ul class="sikaku-set">
+                                        <li>
+                                            <p class="sikaku"></p>
+                                        </li>
+                                        <li>
+                                            <p class="introduce-moji-nomal">ペルソナ <span class="introduce-moji-nomal2">…内気な新米教師</span></p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="introduce-set">
+                                        <p class="introduce-moji-small">藤原いのり</p>
+                                        <p class="introduce-moji-small">愛知県出身の22歳。中学校の新人教師、担当科目は国語で、</p>
+                                        <p class="introduce-moji-small">趣味は読書、料理、裁縫。通勤手段は自動車。</p>
+                                        <p class="introduce-moji-small">４月から林檎中学校で中学1年生の担任をすることになった。</p>
+                                        <p class="introduce-moji-small">運動は得意ではないが、女子ソフトボール部の顧問をしている。</p>
+                                        <p class="introduce-moji-small">性格は内気で大人しく、自ら積極的にコミュニケーションをとることは苦手。</p>
+                                        <p class="introduce-moji-small">非常に忘れっぽく、焦ると失敗を起こしやすい。失敗を引きずりやすい。</p>
+                                        <p class="introduce-moji-small">そんな自分に自信がなく、自分に対しとことん「マイナス思考」である。</p>
+                                        <p class="introduce-moji-small">しかし、教師という仕事に熱い情熱を持っており、</p>
+                                        <p class="introduce-moji-small">生徒たちのために日々努力している。</p>
+                                    </div>
+                                </div> 
+                                <img class="flag-mitsui-size"src="images/mitsuisan.png"/> 
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--制作過程-->
+                    <li>
+                        <div class="number-margin">
+                            <div class="number-tate">
+                                <ul class="sikaku-set">
+                                    <li>
+                                        <p class="sikaku"></p>
+                                    </li>
+                                    <li>
+                                        <p class="introduce-moji-nomal">制作過程</p>
+                                    </li>
+                                </ul>
+                                <div class="number-layout">
+
+                                    <!--01-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/01.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">シナリオの制作</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">ペルソナが何に困っていて、ポータルサイトを使用することでどう問題が解決されるのか、</p>
+                                                <p class="introduce-moji-small">具体的なシナリオにおこします。</p>
+                                                <p class="introduce-moji-small">ペルソナが新米教師であることと現代の教師が多忙であることを最重要事項として念頭に置き、</p>
+                                                <p class="introduce-moji-small">まだ業界で人脈の乏しい新人が、1人でやり慣れない複数のタスクをこなすことが</p>
+                                                <p class="introduce-moji-small">心身ともにストレスになっていると考え、そのストレス軽減につながるポータルサイトの活用をシナリオにしました。</p>
+                                                <p class="introduce-moji-small">サイトを使わなかった時の失敗と、サイトを使ったことによるペルソナのタスク達成までをシナリオにして、</p>
+                                                <p class="introduce-moji-small">サイトの有効性をわかりやすく対比させました。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="tcle-story-size"src="images/tcle-story.png"/>
+
+                                    <!--02-->
+                                    <div class="number-margin">
+                                        <div class="center-line">
+                                            <img class="tcle-tei01-size"src="images/tcle-tei01.png"/>
+                                            <div class="number-tate">
+                                                <ul class="sikaku-set">
+                                                    <li>
+                                                        <img class="number-size"src="images/02.png"/>
+                                                    </li>
+                                                    <li>
+                                                        <p class="introduce-moji-sub">サイトの内容をより具体的にする</p>
+                                                    </li>
+                                                </ul>
+                    
+                                                <div class="number-set">
+                                                    <p class="introduce-moji-small">ペルソナの需要を満たすサイトの内容を具体的に</p>
+                                                    <p class="introduce-moji-small">書き出し、アイデアをまとめます。</p>
+                                                    <p class="introduce-moji-small">新任ならではの悩みや、残業を減らすための機能など</p>
+                                                    <p class="introduce-moji-small">サイトに必要な事項を端から端まで書き出します。</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+
+                                    <!--03-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/03.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">「低品質の」プロトタイプ</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">「Tcle」の具体的なデザインや機能を考え、低品質のプロトタイプを作成します。</p>
+                                                <p class="introduce-moji-small">はじめは教員が手軽にサイトを活用できるように、スマートフォン版のサイトを作成しようとしましたが、</p>
+                                                <p class="introduce-moji-small">スマートフォンでは1画面で得ることができる情報量が少なく、スクロールの数が増えてしまったり</p>
+                                                <p class="introduce-moji-small">複数の機能を持ち合わせたサイトにしたかったため、小さな画面では操作が困難になってしまいました。</p>
+                                                <p class="introduce-moji-small">さらに、生徒の個人情報を扱うため、学校外での使用は情報漏洩に繋がってしまうと考え、</p>
+                                                <p class="introduce-moji-small">これらを考慮して、学校の教員用のPCで使用できるサイトに変更しました。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="tcle-tei-tei-size"src="images/tcle-tei-tei.png"/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--使用方法-->
+                    <li>
+                        <div class="section-tatetate">
+                            <div class="section-tate">
+                                <ul class="sikaku-set">
+                                    <li>
+                                        <p class="sikaku"></p>
+                                    </li>
+                                    <li>
+                                        <p class="introduce-moji-nomal">使用方法</p>
+                                    </li>
+                                </ul>
+                                <div class="number-layout">
+                                    <img class="tcle-ex-size"src="images/tcle-ex.png"/>
+                                    <!--01-->
+                                    <div class="number-margin">
+                                        <div class="center-line">
+                                            <div class="number-tate">
+                                                <ul class="sikaku-set">
+                                                    <li>
+                                                        <img class="number-size"src="images/01.png"/>
+                                                    </li>
+                                                    <li>
+                                                        <p class="introduce-moji-sub">マイページ</p>
+                                                    </li>
+                                                </ul>
+                    
+                                                <div class="number-set">
+                                                    <p class="introduce-moji-small">ホームの右上の人型アイコンを押すと、マイページになります。</p>
+                                                    <p class="introduce-moji-small">自身が登録しているプロフィールとアカウント情報を確認できます。</p>
+                                                    <p class="introduce-moji-small">プロフィールは年度が変わるごとに更新され、転勤や担当の部活動に</p>
+                                                    <p class="introduce-moji-small">変更があれば、その都度変更されます。</p>
+                                                    <p class="introduce-moji-small">詳細設定では、スケジュールが決定したり変更があったときに</p>
+                                                    <p class="introduce-moji-small">「ON」に設定することで、部員に自動でメールを送信します。</p>
+                                                    <p class="introduce-moji-small">「OFF」に設定すると、送信を手動で行うこともできます。</p>
+                                                    <p class="introduce-moji-small">部員や保護者の連絡先を登録すれば一括で管理されるため</p>
+                                                    <p class="introduce-moji-small">登録のある連絡先のみに連絡することが可能です。</p>
+                                                    <p class="introduce-moji-small">また、Tcleはサイトを使用するときは必ずパスワードによる</p>
+                                                    <p class="introduce-moji-small">ログインが必要になるため、部員と保護者の個人情報の</p>
+                                                    <p class="introduce-moji-small">情報漏洩を防ぎます。</p>
+                                                </div>
+                                            </div> 
+                                            <img class="tcle02-pic-size-right"src="images/tclesite02.png"/> 
+                                        </div>
+                                    </div>
+
+                                    <!--02-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/02.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">カレンダー</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">カレンダーで部活動の大まかな日程を組むことができます。</p>
+                                                <p class="introduce-moji-small">学校の年間予定と教員個人の予定、他の部活とのグラウンドや体育館の使用予定も考慮して部活スケジュールを作成します。</p>
+                                                <p class="introduce-moji-small">詳細設定を「ON」にしていれば、月初めになるとその翌月の予定表が自動で部員に送信されるようになっています。</p>
+                                                <p class="introduce-moji-small">また、スケジュールを変更したい日付のマス目を右クリックで部活の予定のキャンセル・変更・追加などができ、</p>
+                                                <p class="introduce-moji-small">変更があればその都度部員に新しいメールが送信されます。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--03-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/03.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">練習メニュー履歴</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">マイページの詳細設定の練習メニューの自動作成を「ON」にすると、サイトが自動的に部活動の練習メニューを作成します。</p>
+                                                <p class="introduce-moji-small">いつどんなメニューをやったのか、明日のメニューは何かを確認するときに使用できます。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--04-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/04.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">メールの作成</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">部員や部員の保護者に個人・全員にメールを送りたいときに使用することができます。</p>
+                                                <p class="introduce-moji-small">必要な連絡先を登録することが可能であるため、膨大な数の連絡先を教員のプライベートの電話帳に登録しなくても済みます。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--05-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/05.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">最新ソフトボール<span class="introduce-moji-sub2">NEWS</span></p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">教員が担当している部活動の競技（種類）によって、その部活動に合わせて競技（種類）の最新の記事を読むことができます。</p>
+                                                <p class="introduce-moji-small">部員との会話のきっかけや話題になったり、指導の際に引用などの参考にもすることができます。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--06-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/06.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">練習試合・イベント情報</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">新任教師のような教員の業界での人間関係が少ない人でも、多くの学校と練習試合やイベント参加が行えるようにするために、</p>
+                                                <p class="introduce-moji-small">自ら練習試合の募集をかけたり、他の学校が募集してる練習試合を閲覧することができ、参加申請を送ることができます。</p>
+                                                <p class="introduce-moji-small">地域の範囲を絞ったり、月単位で範囲を絞って検索することもできます。</p>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="number-margin">
+                                        <div class="center-line">
+                                            <img class="tcle03-pic-size-left"src="images/tclesite03.png"/>
+                                            <div class="number-tate">
+                                                <ul class="sikaku-set">
+                                                    <li>
+                                                        <p class="introduce-moji-sub">①他校が募集中の練習試合に参加したいとき</p>
+                                                    </li>
+                                                </ul>
+                
+                                                <div class="number-set">
+                                                    <p class="introduce-moji-small">ホーム画面の他校の練習試合募集一覧から条件の</p>
+                                                    <p class="introduce-moji-small">いい練習試合があれば参加申請を出すことができます。</p>
+                                                    <p class="introduce-moji-small">相手の承認が手動であれば、相手校が承認した</p>
+                                                    <p class="introduce-moji-small">時点で両学校の教員・部員にメールが送信されます。</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="number-margin">
+                                        <div class="center-line">
+                                            <div class="number-tate">
+                                                <ul class="sikaku-set">
+                                                    <li>
+                                                        <p class="introduce-moji-sub">②自分が募集をかけたとき</p>
+                                                    </li>
+                                                </ul>
+                                                <div class="number-set">
+                                                    <p class="introduce-moji-small">自分が募集した練習試合の内容を確認できます。</p>
+                                                    <p class="introduce-moji-small">自身の学校を会場にする場合は、学校の外観や</p>
+                                                    <p class="introduce-moji-small">グラウンドの写真・地図が自動で添付されます。</p>
+                                                    <p class="introduce-moji-small">参加申請がきて学校名と内容を確認し承認すれば</p>
+                                                    <p class="introduce-moji-small">練習試合成立、練習試合の要項が書かれたメールが</p>
+                                                    <p class="introduce-moji-small">両校の教員・部員に自動送信されます。</p>
+                                                </div>
+                                            </div> 
+                                            <img class="tcle04-pic-size-right"src="images/tclesite04.png"/> 
+                                        </div>
+                                    </div>
+                                    <div class="number-margin">
+                                        <div class="center-line">
+                                            <img class="tcle05-pic-size-left"src="images/tclesite05.png"/>
+                                            <div class="number-tate">
+                                                <ul class="sikaku-set">
+                                                    <li>
+                                                        <p class="introduce-moji-sub">③新しく練習試合を募集するとき</p>
+                                                    </li>
+                                                </ul>
+                
+                                                <div class="number-set">
+                                                    <p class="introduce-moji-small">練習試合の募集をかけることができる</p>
+                                                    <p class="introduce-moji-small">必要な要項はテンプレートで準備されているため、</p>
+                                                    <p class="introduce-moji-small">必要事項を入力・選択して「この内容で募集する」を</p>
+                                                    <p class="introduce-moji-small">クリックで募集が完了します。</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+
+                                    <!--07-->
+                                    <div class="number-margin">
+                                        <div class="number-tate">
+                                            <ul class="sikaku-set">
+                                                <li>
+                                                    <img class="number-size"src="images/07.png"/>
+                                                </li>
+                                                <li>
+                                                    <p class="introduce-moji-sub">大会情報</p>
+                                                </li>
+                                            </ul>
+            
+                                            <div class="number-set">
+                                                <p class="introduce-moji-small">学校に連絡される部活動の各競技（種類）ごとの大会の情報を確認することができます。参加予定の大会の表示で確認ができ、 </p>
+                                                <p class="introduce-moji-small">詳細設定の大会からのメールを部員に自動転送を「ON」にすると自動で大会からの連絡を部員に送信できる。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="section-tatetate">
+                            <ul class="sikaku-set">
+                                <li>
+                                    <p class="sikaku"></p>
+                                </li>
+                                <li>
+                                    <p class="introduce-moji-nomal">使用ソフトウェア</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="softwere-margin">
+                    <ul class="softwere-layout">
+                        <li>
+                            <div class="img_wrap softwere-size">
+                                <img src="images/illustrator.png"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--フッター-->
+        <section>
+            <div class="footer">
+                <p class="footer-moji">©︎2021 RuriKawahara PortfolioSite</p>
+            </div>
+        </section>
+
+    </body>
+</html>
